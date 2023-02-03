@@ -23,3 +23,15 @@ test('should add zeros if value < numberOfParts', () => {
     
     expect(parts).toEqual([0, 1, 1]);
 });
+
+test(`should be a functioin`, () => {
+    expect(splitInteger)
+        .toBeInstanceOf(Function);
+});
+
+test(`should return an array`, () => {
+    const parts = splitInteger(6, 2);
+
+    expect(parts)
+        .toBeInstanceOf(Array);
+});
